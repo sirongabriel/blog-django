@@ -15,7 +15,7 @@ class Post(models.Model):
     status  = models.CharField(max_length=10, choices=STATUS, default= 'rascunho')
     
     class Meta:
-        ordering = ('public', )
+        ordering = ('public', ) #1.54.53
     def __str__(self):
         return self.title
      
